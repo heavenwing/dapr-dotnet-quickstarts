@@ -1,0 +1,13 @@
+﻿// hello
+###
+GET http://localhost:13501/v1.0/invoke/dotnetapp/method/weather
+
+###
+GET http://localhost:5000/weather
+
+// hello
+###
+GET http://localhost:13501/v1.0/invoke/dotnetapp/method/hello?what=zyg
+
+###
+GET http://localhost:5000/hello?what=zyg
