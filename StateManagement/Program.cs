@@ -10,7 +10,7 @@ namespace StateManagement
     {
         static string daprPort = Environment.GetEnvironmentVariable("DAPR_HTTP_PORT") ?? "3500";
         const string stateStoreName = "statestore";//default state store name
-        const string stateKey = "order";
+        const string stateKey = "order-17";
         static string stateUrl = $"http://localhost:{daprPort}/v1.0/state/{stateStoreName}";
 
         static async Task Main(string[] args)
@@ -25,11 +25,11 @@ namespace StateManagement
             {
                 new
                 {
-                    key="order",
-                    value=new Order
+                    key = stateKey,
+                    value = new Order
                     {
-                        Id=17,
-                        Amount=1
+                        Id = 17,
+                        Amount = 1
                     }
                 }
             };
