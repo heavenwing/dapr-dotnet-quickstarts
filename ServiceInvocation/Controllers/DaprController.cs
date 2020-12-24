@@ -22,7 +22,7 @@ namespace ServiceInvocation.Controllers
             _logger = logger;
         }
 
-        [HttpGet("/weather")]
+        [HttpGet("/api/weather")]
         public IEnumerable<WeatherForecast> GetWeather()
         {
             var rng = new Random();

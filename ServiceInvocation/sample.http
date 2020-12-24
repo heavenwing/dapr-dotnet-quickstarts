@@ -1,9 +1,9 @@
 ﻿// weather
 ###
-GET http://localhost:13501/v1.0/invoke/dotnetapp/method/weather
+GET http://localhost:13501/v1.0/invoke/dotnetapp/method/api/weather
 
 ###
-GET http://localhost:5000/weather
+GET http://localhost:5000/api/weather
 
 // hello
 ###
