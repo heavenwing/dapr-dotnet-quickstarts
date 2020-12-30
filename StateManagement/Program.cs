@@ -8,15 +8,17 @@ namespace StateManagement
 {
     class Program
     {
-        static string daprPort = Environment.GetEnvironmentVariable("DAPR_HTTP_PORT") ?? "3500";
+        static string daprHttpPort = Environment.GetEnvironmentVariable("DAPR_HTTP_PORT") ?? "50001";
+        static string daprGrpcPort = Environment.GetEnvironmentVariable("DAPR_GRPC_PORT") ?? "3500";
         const string stateStoreName = "statestore";//default state store name
         const string stateKey = "order-17";
-        static string stateUrl = $"http://localhost:{daprPort}/v1.0/state/{stateStoreName}";
+        static string stateUrl = $"http://localhost:{daprHttpPort}/v1.0/state/{stateStoreName}";
 
         static async Task Main(string[] args)
         {
             Console.WriteLine("Start demostrate State Management!");
-            Console.WriteLine($"DAPR_HTTP_PORT is {daprPort}");
+            Console.WriteLine($"DAPR_HTTP_PORT is {daprHttpPort}");
+            Console.WriteLine($"DAPR_GRPC_PORT is {daprGrpcPort}");
 
             using var httpClient = new HttpClient();
 
