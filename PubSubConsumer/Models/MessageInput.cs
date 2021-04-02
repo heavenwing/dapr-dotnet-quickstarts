@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PubSubConsumer.Models
 {
-    public class WakeupInput
+    public class MessageInput
     {
         [JsonPropertyName("name")]
         public string Name { get; set; }

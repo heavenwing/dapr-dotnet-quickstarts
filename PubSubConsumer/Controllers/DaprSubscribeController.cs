@@ -19,7 +19,7 @@ namespace PubSubConsumer.Controllers
                 new DaprSubscribeOutput
                 {
                     PubSubName="pubsub",
-                    Topic="quickstarts",
+                    Topic="quickstarts/wakeup",
                     Route="/api/wakeup"
                 }
             });

@@ -1,0 +1,1 @@
+dapr run --app-id quickstarts-pbc --app-port 5000 --dapr-http-port 13504 --components-path ../components -- dotnet run

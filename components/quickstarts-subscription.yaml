@@ -1,0 +1,10 @@
+apiVersion: dapr.io/v1alpha1
+kind: Subscription
+metadata:
+  name: quickstarts-subscription
+spec:
+  topic: quickstarts/sleep
+  route: /api/sleep
+  pubsubname: pubsub
+scopes:
+- quickstarts-pbc

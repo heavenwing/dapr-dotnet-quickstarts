@@ -12,11 +12,11 @@ namespace PubSubConsumer.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class WakeupController : ControllerBase
+    public class SleepController : ControllerBase
     {
-        private readonly ILogger<WakeupController> _logger;
+        private readonly ILogger<SleepController> _logger;
 
-        public WakeupController(ILogger<WakeupController> logger)
+        public SleepController(ILogger<SleepController> logger)
         {
             _logger = logger;
         }
