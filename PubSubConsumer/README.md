@@ -1,1 +1,3 @@
-﻿
+﻿```sh
+exexute run.cmd
+```
