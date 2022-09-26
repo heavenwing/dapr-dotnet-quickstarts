@@ -1,0 +1,10 @@
+#apiVersion: dapr.io/v1alpha1
+#kind: Component
+#metadata:
+#  name: azappconfig
+#spec:
+#  type: configuration.azure.appconfig
+#  version: v1
+#  metadata:
+#  - name: connectionString
+#    value: "Endpoint=https://zyg-jf.azconfig.azure.cn;Id=a47F-lav-s0:GWoRzI9nosA2Ris7XmG9;Secret=CmBSAixOcEjeP7/Mqxy+tartrMBTW2coQP/3rYr+uJg="
