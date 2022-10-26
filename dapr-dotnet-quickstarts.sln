@@ -20,7 +20,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PubSubConsumer", "PubSubCon
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PubSubProducer", "PubSubProducer\PubSubProducer.csproj", "{34FD3ABB-58E1-4790-AE87-B0C5282D9132}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConfigurationWithSdk", "ConfigurationWithSdk\ConfigurationWithSdk.csproj", "{4315E997-13E2-448E-A897-473F3A746057}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConfigurationWithSdk", "ConfigurationWithSdk\ConfigurationWithSdk.csproj", "{4315E997-13E2-448E-A897-473F3A746057}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SecretsManagementWithSdk", "SecretsManagementWithSdk\SecretsManagementWithSdk.csproj", "{356F17A3-8AC3-4E02-A6FB-0B82B95895BB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -52,6 +54,10 @@ Global
 		{4315E997-13E2-448E-A897-473F3A746057}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4315E997-13E2-448E-A897-473F3A746057}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4315E997-13E2-448E-A897-473F3A746057}.Release|Any CPU.Build.0 = Release|Any CPU
+		{356F17A3-8AC3-4E02-A6FB-0B82B95895BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{356F17A3-8AC3-4E02-A6FB-0B82B95895BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{356F17A3-8AC3-4E02-A6FB-0B82B95895BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{356F17A3-8AC3-4E02-A6FB-0B82B95895BB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
