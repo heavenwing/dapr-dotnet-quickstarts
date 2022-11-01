@@ -9,4 +9,7 @@ using var client = new DaprClientBuilder().Build();
 //Using Dapr SDK to get a secret
 var secret = await client.GetSecretAsync(SECRET_STORE_NAME, "secret");
 //var secret = await client.GetSecretAsync(SECRET_STORE_NAME, "cae-connstr");
+Console.WriteLine($"Result has {secret.Count} item(s)");
+Console.WriteLine($"Result has key {secret.Keys.First()}");
+Console.WriteLine($"Result has value {secret.Values.First()}");
 Console.WriteLine($"Result: {string.Join(", ", secret)}");
