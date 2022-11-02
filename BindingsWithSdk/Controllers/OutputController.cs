@@ -22,6 +22,7 @@ namespace BindingsWithSdk.Controllers
             {
                 Name = "zyg",
                 Email = "heavenwing@msn.com",
+                DisplayName = "朱永光"
             };
             await daprClient.InvokeBindingAsync("user-output-binding", "create", model);
             return Ok(model);
