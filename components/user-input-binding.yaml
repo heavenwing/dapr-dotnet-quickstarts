@@ -1,13 +1,13 @@
 apiVersion: dapr.io/v1alpha1
 kind: Component
 metadata:
-  name: user-output-binding
+  name: user-input-binding
 spec:
   type: bindings.rabbitmq
   version: v1
   metadata:
   - name: queueName
-    value: requests
+    value: responses
   - name: host
     value: amqp://guest:guest@localhost:5672
   - name: durable
