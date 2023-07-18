@@ -16,5 +16,8 @@ namespace PubSubConsumer.Models
 
         [JsonPropertyName("route")]
         public string Route { get; set; }
+
+        [JsonPropertyName("deadLetterTopic")]
+        public string DeadLetterTopic { get; set; }
     }
 }

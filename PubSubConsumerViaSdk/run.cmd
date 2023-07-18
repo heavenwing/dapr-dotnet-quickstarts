@@ -1,0 +1,1 @@
+dapr run --app-id quickstarts-psc-sdk --app-port 5109 --resources-path ../components/common -- dotnet run

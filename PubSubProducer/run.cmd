@@ -1,1 +1,1 @@
-dapr run --app-id quickstarts-psp --dapr-http-port 13505 --components-path ../components -- dotnet run
+dapr run --app-id quickstarts-psp --dapr-http-port 13505 --resources-path ../components/common -- dotnet run

@@ -20,13 +20,15 @@ namespace PubSubConsumer.Controllers
                 {
                     PubSubName="pubsub",
                     Topic="quickstarts/wakeup",
-                    Route="/api/wakeup"
+                    Route="/api/wakeup",
+                    DeadLetterTopic="poisonMessages"
                 },
                 new DaprSubscribeOutput
                 {
                     PubSubName="pubsub",
                     Topic="quickstarts/sleep",
-                    Route="/api/sleep"
+                    Route="/api/sleep",
+                    DeadLetterTopic="poisonMessages"
                 }
             });
         }

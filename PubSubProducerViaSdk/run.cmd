@@ -1,0 +1,1 @@
+  dapr run --app-id quickstarts-psp-sdk --resources-path ../components/common -- dotnet run
