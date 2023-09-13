@@ -28,7 +28,7 @@ namespace PubSubConsumer.Controllers
             //    var payload = await sr.ReadToEndAsync();
             //    _logger.LogInformation(payload);
             //}
-            _logger.LogInformation(model.Data.Name);
+            _logger.LogInformation($"name: {model.Data.Name} source: {model.Source}");
             return Ok();
         }
     }

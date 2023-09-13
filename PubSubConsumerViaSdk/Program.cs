@@ -14,6 +14,7 @@ app.UseAuthorization();
 
 app.MapControllers();
 
+app.UseCloudEvents();
 app.MapSubscribeHandler();
 
 app.Run();

@@ -10,5 +10,11 @@ namespace PubSubConsumer.Models
     {
         [JsonPropertyName("data")]
         public T Data { get; set; }
+
+        [JsonPropertyName("pubsubname")]
+        public string Pubsubname { get; set; }
+
+        [JsonPropertyName("source")]
+        public string Source { get; set; }
     }
 }
